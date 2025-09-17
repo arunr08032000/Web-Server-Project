@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo docker build -t nginx:latest .'
+                sh 'echo "arun" | sudo -S docker build -t nginx:latest .'
             }
         }
         stage('Run') {
